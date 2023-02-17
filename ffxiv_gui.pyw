@@ -2,6 +2,9 @@ import random
 import os
 import shelve
 import tkinter as tk
+from playsound import playsound
+
+playsound("C:\\Users\\K.Ren Westin\\Desktop\\prog\\ffxiv_gui\\ffxiv_gui_new\\ff7prelude.mp3", block=False)
 
 healers = ["Sage", "Astrologian", "White Mage", "Scholar"]
 tanks = ["Dark Knight", "Warrior", "Gunbreaker", "Paladin"]
@@ -50,6 +53,11 @@ def melee_click():
 def all_jobs_result_click():
     temp = ", ".join(jobs)
     result_label.config(text=f"{temp}")
+
+
+#def play_music():
+#    playsound(
+#        "C:\\Users\\K.Ren Westin\\Desktop\\prog\\ffxiv_gui\\ffxiv_gui_new\\ff7prelude.mp3", block=False)
 
 
 def exit_click():
@@ -107,5 +115,9 @@ exit_button = tk.Button(text="Exit", font=(
     "Helvetica", 12), height=1, width=4, command=exit_click)
 exit_button.place(x=745, y=260)
 # exit_button.pack()
+
+#music_button = tk.Button(text="Play Music", font=(
+#    "Helvetica", 12), height=1, width=4, command=play_music)
+#music_button.place(x=710, y=260)
 
 window.mainloop()
