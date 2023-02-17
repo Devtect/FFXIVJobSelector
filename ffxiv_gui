@@ -1,5 +1,5 @@
 import random
-# import os
+import os
 import shelve
 import tkinter as tk
 
@@ -9,7 +9,7 @@ magical_dps = ["Black Mage", "Red Mage", "Summoner"]
 r_physical_dps = ["Machinist", "Bard"]
 melee = ["Monk", "Ninja", "Samurai", "Reaper"]
 jobs = []
-
+temp = " "
 
 with shelve.open("jobs_db") as db:
     if "jobs" in db:
@@ -63,8 +63,8 @@ window.title("FFXIV Job Finder")
 window.geometry("800x300")
 window.configure(bg="gray")
 
-previous_result_label = tk.Label(
-    text=f"Previously selected jobs are: {temp}", font=("Comic Sans MS", 11, "bold"), bg="gray")
+previous_result_label = tk.Label(text=f"Previously selected jobs are: {temp}", font=(
+    "Comic Sans MS", 11, "bold"), bg="gray")
 previous_result_label.pack()
 
 result_label = tk.Label(text="", font=("Comic Sans MS", 20), bg="gray")
