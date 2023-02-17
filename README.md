@@ -4,7 +4,7 @@ Simple FFXIV job selector for people who are undecisive like myself. The program
 
 ## 💽Installation💽
 
-Download and run the .exe file. (no virus i promise)
+Download and run the .exe file. (~~no virus i promise~~ it was a false positive, fixed it with compiling bootload for pyinstaller)
 
 ## 👨‍💻Usage👨‍💻
 
