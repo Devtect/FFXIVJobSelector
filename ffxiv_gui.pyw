@@ -4,7 +4,7 @@ import shelve
 import tkinter as tk
 from playsound import playsound
 
-playsound("C:\\Users\\K.Ren Westin\\Desktop\\prog\\ffxiv_gui\\ffxiv_gui_new\\ff7prelude.mp3", block=False)
+playsound("C:\\Users\\K.Ren Westin\\Desktop\\prog\\ffxiv_gui\\ff7prelude.mp3", block=False)
 
 healers = ["Sage", "Astrologian", "White Mage", "Scholar"]
 tanks = ["Dark Knight", "Warrior", "Gunbreaker", "Paladin"]
