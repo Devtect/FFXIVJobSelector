@@ -1,5 +1,5 @@
 import random
-import os
+#import os
 import shelve
 import tkinter as tk
 from playsound import playsound
